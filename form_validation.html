@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container mt-3 border" style="background-color: rgb(223, 250, 185);">
+        <a href="https://www.centennialcollege.ca/" target="_blank"><img src="/College/Web_Interface/Assignment 4/college_logo.png" alt="College Logo" style="float: left; width: 20%;height:auto;margin: 20px"></a>
+        <h2 class="text-center m-4">Centennial College</h2>
+        <h3 class="text-center m-3">Continuing Education Course/Instuctor Evaluation</h3>
+        <p><sup style="color: red;">*</sup> read each statement carefully and consider each one individually.</p>
+        <form action="#" class="was-validated">
+            <fieldset class="mb-5 mt-4">
+                <legend>Student Information:</legend>
+                <div class="input-group form-floating mb-3">
+                    <span class="input-group-text">Course Name and Code:</span>
+                    <input type="text" class="form-control" id="course-name" placeholder="Enter Course name" name="course-name" required>
+                    <input type="text" class="form-control" id="course-code" placeholder="Enter Course code" name="course-code" required>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Please fill this field.</div>
+                </div>
+                
+                <div class="input-group form-floating mb-3">
+                    <span class="input-group-text">Semester:</span>
+                    <div class="form-check me-3 ms-3" >
+                        <input type="radio" class="form-check-input" name="semester" id="fall" value="fall" required>
+                        <label for="fall" class="form-check-lable">Fall</label>
+                    </div>
+                    <div class="form-check me-3 ms-3">
+                        <input type="radio" class="form-check-input" name="semester" id="winter" value="winter" required>
+                        <label for="winter" class="form-check-lable">Winter</label>
+                    </div>
+                    <div class="form-check me-3 ms-3">
+                        <input type="radio" class="form-check-input" name="semester" id="summer" value="summer" required>
+                        <label for="summer" class="form-check-lable">Summer/Spring</label>
+                    </div>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Please fill this field.</div>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Year:</span>
+                    <input type="number" name="year" id="year" min="1995" max="2030" value="2024" required>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Please fill this field.</div>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">Instructor:</span>
+                    <input type="text" name="instructor" id="insructor" placeholder="Enter the name of Instructor" required style="width: 40%;">
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Please fill this field.</div>
+                </div>
+            </fieldset>
+            <fieldset class="mt-4 mb-5">
+                <legend>Instructor:</legend>
+                <p>How would you rate the instructor's...</p>
+                <div class="input-group form-floating mb-3">
+                    <span class="input-group-text">1. knowledge of subject?</span>
+                    <div class="form-check me-5 ms-5" >
+                        <input type="radio" class="form-check-input" name="knowledge" id="excellent1" value="Excellent" required>
+                        <label for="fall" class="form-check-lable">Excellent</label>
+                    </div>
+                    <div class="form-check me-5 ms-5">
+                        <input type="radio" class="form-check-input" name="knowledge" id="good1" value="Good" required>
+                        <label for="winter" class="form-check-lable">Good</label>
+                    </div>
+                    <div class="form-check me-5 ms-5">
+                        <input type="radio" class="form-check-input" name="knowledge" id="fair1" value="Fair" required>
+                        <label for="summer" class="form-check-lable">Fair</label>
+                    </div>
+                    <div class="form-check me-5 ms-5">
+                        <input type="radio" class="form-check-input" name="knowledge" id="ns1" value="Not Satisfactory" required>
+                        <label for="summer" class="form-check-lable">Not Satisfactory</label>
+                    </div>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Please fill this field.</div>
+                </div>
+                <div class="input-group form-floating mb-3">
+                    <span class="input-group-text">2. helpfullness?</span>
+                    <div class="form-check me-5 ms-5" >
+                        <input type="radio" class="form-check-input" name="helpfullness" id="excellent2" value="Excellent" required>
+                        <label for="fall" class="form-check-lable">Excellent</label>
+                    </div>
+                    <div class="form-check me-5 ms-5">
+                        <input type="radio" class="form-check-input" name="helpfullness" id="good2" value="Good" required>
+                        <label for="winter" class="form-check-lable">Good</label>
+                    </div>
+                    <div class="form-check me-5 ms-5">
+                        <input type="radio" class="form-check-input" name="helpfullness" id="fair2" value="Fair" required>
+                        <label for="summer" class="form-check-lable">Fair</label>
+                    </div>
+                    <div class="form-check me-5 ms-5">
+                        <input type="radio" class="form-check-input" name="helpfullness" id="ns2" value="Not Satisfactory" required>
+                        <label for="summer" class="form-check-lable">Not Satisfactory</label>
+                    </div>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Please fill this field.</div>
+                </div>
+                <div class="input-group form-floating mb-3">
+                    <span class="input-group-text">3. courtesy and respect for all students?</span>
+                    <div class="form-check me-5 ms-5" >
+                        <input type="radio" class="form-check-input" name="respect" id="excellent3" value="Excellent" required>
+                        <label for="fall" class="form-check-lable">Excellent</label>
+                    </div>
+                    <div class="form-check me-5 ms-5">
+                        <input type="radio" class="form-check-input" name="respect" id="good3" value="Good" required>
+                        <label for="winter" class="form-check-lable">Good</label>
+                    </div>
+                    <div class="form-check me-5 ms-5">
+                        <input type="radio" class="form-check-input" name="respect" id="fair3" value="Fair" required>
+                        <label for="summer" class="form-check-lable">Fair</label>
+                    </div>
+                    <div class="form-check me-5 ms-5">
+                        <input type="radio" class="form-check-input" name="respect" id="ns3" value="Not Satisfactory" required>
+                        <label for="summer" class="form-check-lable">Not Satisfactory</label>
+                    </div>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Please fill this field.</div>
+                </div>
+                <div class="input-group form-floating mb-3">
+                    <span class="input-group-text">4. communication skill?</span>
+                    <div class="form-check me-5 ms-5" >
+                        <input type="radio" class="form-check-input" name="communication" id="excellent4" value="Excellent" required>
+                        <label for="fall" class="form-check-lable">Excellent</label>
+                    </div>
+                    <div class="form-check me-5 ms-5">
+                        <input type="radio" class="form-check-input" name="communication" id="good4" value="Good" required>
+                        <label for="winter" class="form-check-lable">Good</label>
+                    </div>
+                    <div class="form-check me-5 ms-5">
+                        <input type="radio" class="form-check-input" name="communication" id="fair4" value="Fair" required>
+                        <label for="summer" class="form-check-lable">Fair</label>
+                    </div>
+                    <div class="form-check me-5 ms-5">
+                        <input type="radio" class="form-check-input" name="communication" id="ns4" value="Not Satisfactory" required>
+                        <label for="summer" class="form-check-lable">Not Satisfactory</label>
+                    </div>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Please fill this field.</div>
+                </div>
+                <div class="input-group form-floating mb-3">
+                    <span class="input-group-text">5. overall performance?</span>
+                    <br>
+                    <div class="form-check me-5 ms-5" >
+                        <input type="radio" class="form-check-input" name="performance" id="excellent5" value="Excellent" required>
+                        <label for="fall" class="form-check-lable">Excellent</label>
+                    </div>
+                    <div class="form-check me-5 ms-5">
+                        <input type="radio" class="form-check-input" name="performance" id="good5" value="Good" required>
+                        <label for="winter" class="form-check-lable">Good</label>
+                    </div>
+                    <div class="form-check me-5 ms-5">
+                        <input type="radio" class="form-check-input" name="performance" id="fair5" value="Fair" required>
+                        <label for="summer" class="form-check-lable">Fair</label>
+                    </div>
+                    <div class="form-check me-5 ms-5">
+                        <input type="radio" class="form-check-input" name="performance" id="ns5" value="Not Satisfactory" required>
+                        <label for="summer" class="form-check-lable">Not Satisfactory</label>
+                    </div>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Please fill this field.</div>
+                </div>
+            </fieldset>
+            <fieldset class="mt-4 mb-5">
+                <legend>Course:</legend>
+                <div class="input-group form-floating mb-3">
+                    <span class="input-group-text">6. How would you rate the course-materials?</span>
+                    <div class="form-check me-5 ms-5" >
+                        <input type="radio" class="form-check-input" name="course-materials" id="excellent6" value="Excellent" required>
+                        <label for="fall" class="form-check-lable">Excellent</label>
+                    </div>
+                    <div class="form-check me-5 ms-5">
+                        <input type="radio" class="form-check-input" name="course-materials" id="good6" value="Good" required>
+                        <label for="winter" class="form-check-lable">Good</label>
+                    </div>
+                    <div class="form-check me-5 ms-5">
+                        <input type="radio" class="form-check-input" name="course-materials" id="fair6" value="Fair" required>
+                        <label for="summer" class="form-check-lable">Fair</label>
+                    </div>
+                    <div class="form-check me-5 ms-5">
+                        <input type="radio" class="form-check-input" name="course-materials" id="ns6" value="Not Satisfactory" required>
+                        <label for="summer" class="form-check-lable">Not Satisfactory</label>
+                    </div>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Please fill this field.</div>
+                </div>
+                <div class="input-group form-floating mb-3">
+                    <span class="input-group-text">7. How much did this course meet your expectations?</span>
+                    <div class="form-check me-5 ms-5" >
+                        <input type="radio" class="form-check-input" name="expectations" id="excellent7" value="Excellent" required>
+                        <label for="fall" class="form-check-lable">Excellent</label>
+                    </div>
+                    <div class="form-check me-5 ms-5">
+                        <input type="radio" class="form-check-input" name="expectations" id="good7" value="Good" required>
+                        <label for="winter" class="form-check-lable">Good</label>
+                    </div>
+                    <div class="form-check me-5 ms-5">
+                        <input type="radio" class="form-check-input" name="expectations" id="fair7" value="Fair" required>
+                        <label for="summer" class="form-check-lable">Fair</label>
+                    </div>
+                    <div class="form-check me-5 ms-5">
+                        <input type="radio" class="form-check-input" name="expectations" id="ns7" value="Not Satisfactory" required>
+                        <label for="summer" class="form-check-lable">Not Satisfactory</label>
+                    </div>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Please fill this field.</div>
+                </div>
+                <div class="input-group form-floating mb-3">
+                    <span class="input-group-text">8. How would you rate this course(overall)?</span>
+                    <div class="form-check me-5 ms-5" >
+                        <input type="radio" class="form-check-input" name="overall" id="excellent8" value="Excellent" required>
+                        <label for="fall" class="form-check-lable">Excellent</label>
+                    </div>
+                    <div class="form-check me-5 ms-5">
+                        <input type="radio" class="form-check-input" name="overall" id="good8" value="Good" required>
+                        <label for="winter" class="form-check-lable">Good</label>
+                    </div>
+                    <div class="form-check me-5 ms-5">
+                        <input type="radio" class="form-check-input" name="overall" id="fair8" value="Fair" required>
+                        <label for="summer" class="form-check-lable">Fair</label>
+                    </div>
+                    <div class="form-check me-5 ms-5">
+                        <input type="radio" class="form-check-input" name="overall" id="ns8" value="Not Satisfactory" required>
+                        <label for="summer" class="form-check-lable">Not Satisfactory</label>
+                    </div>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Please fill this field.</div>
+                </div>
+            </fieldset>
+            <fieldset class="mt-4 mb-5">
+                <legend>General Information:</legend>
+                <div class="input-group form-floating mb-3">
+                    <span class="input-group-text">9. Was the course outline reviewed/expained at the beginning of your course?</span>
+                    <div class="form-check me-5 ms-5" >
+                        <input type="radio" class="form-check-input" name="outline" id="yes9" value="Yes" required>
+                        <label for="fall" class="form-check-lable">Yes</label>
+                    </div>
+                    <div class="form-check me-5 ms-5">
+                        <input type="radio" class="form-check-input" name="outline" id="No9" value="No" required>
+                        <label for="winter" class="form-check-lable">No</label>
+                    </div>
+                    <div class="form-check me-5 ms-5">
+                        <input type="radio" class="form-check-input" name="outline" id="ns9" value="Not Sure" required>
+                        <label for="summer" class="form-check-lable">Not Sure</label>
+                    </div>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Please fill this field.</div>
+                </div>
+                <div class="input-group form-floating mb-3">
+                    <span class="input-group-text">10. would you recommend this course to a friend with the same interests?</span>
+                    <div class="form-check me-5 ms-5" >
+                        <input type="radio" class="form-check-input" name="recommend" id="yes10" value="Yes" required>
+                        <label for="fall" class="form-check-lable">Yes</label>
+                    </div>
+                    <div class="form-check me-5 ms-5">
+                        <input type="radio" class="form-check-input" name="recommend" id="No10" value="No" required>
+                        <label for="winter" class="form-check-lable">No</label>
+                    </div>
+                    <div class="form-check me-5 ms-5">
+                        <input type="radio" class="form-check-input" name="recommend" id="ns10" value="Not Sure" required>
+                        <label for="summer" class="form-check-lable">Not Sure</label>
+                    </div>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Please fill this field.</div>
+                </div>
+            </fieldset>
+            <fieldset class="mt-4 mb-3">
+                <legend>Any Other Comments:</legend>
+                <div class="mb-3 mt-3">
+                    <label for="que11" class="form-lable">11. What is the best thing about this course?</label>
+                    <input type="text" name="que11" id="que11" placeholder="Write here..." style="width: 40%;">
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="que12" class="form-lable">12. How could we improve this course?</label>
+                    <input type="text" name="que12" id="que12" placeholder="Suggest us..." style="width: 40%;">
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="que13" class="form-lable mb-2">13. Other:</label>
+                    <textarea class="form-control" rows="4" name="other" id="que13" placeholder="Write here..."></textarea>
+                </div>
+            </fieldset>
+            <button type="submit" class="btn btn-success m-3">Submit</button>
+            <button type="reset" class="btn btn-primary m-3">Reset</button>
+        </form>
+        <p class="text-center">Thank You! We pay attention to your feedback.</p>
+        <p>Web: <a href="https://www.centennialcollege.ca/continuingeducation" target="_blank">www.centennialcollege.ca/continuing education</a></p>
+        <p>Email: <a href="https://continuingeducation@centennialcollege.ca" target="_blank">continuingeducation@centennialcollege.ca</a></p> 
+    </div>
+</body>
+</html>
